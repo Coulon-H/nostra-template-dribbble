@@ -140,6 +140,7 @@ input{
         width : 100%;
     }
     .h {
-        height: 82.3vh;
+        height: 89.3vh;
+        padding-bottom: 1em;
     }
 }
