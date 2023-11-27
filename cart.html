@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart | Nostra</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1><a href="./index.html">Nostra</a></h1>
+        <ul id="visible">
+          <li><a href="./products.html">Shop</a></li>
+          <li>Most Wanted</li>
+          <li>What's new</li>
+          <li>Brands</li>
+        </ul>
+        <a id="visible" href="./cart.html"
+          ><img src="./images/cart_2.svg" width="35" alt=""
+        /></a>
+        <ul id="hamburger">
+          <li id="show">
+            <a href="#">
+              <img src="./images/menu.svg" width="25" alt="" />
+            </a>
+            <div class="card">
+              <a href="./products.html">Shop</a>
+              <a>Most Wanted</a>
+              <a>What's new</a>
+              <a>Brands</a>
+              <a href="./cart.html">Cart</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="row">
+        <div class="col-first">
+          <div class="contour" style="height: 60vh">
+            <div class="row justify-between">
+              <p>Image</p>
+              <p style="width: 5%">Quantity</p>
+              <p style="width: 15%">Total</p>
+            </div>
+            <div class="row-cart">
+              <div class="col"><img src="./images/product_1.jpg" alt="" /></div>
+              <div class="col">
+                <div class="row justify-center align-center">
+                  <button>
+                    <img class="add" src="./images/minus.svg" alt="" />
+                  </button>
+                  <span>3</span>
+                  <button>
+                    <img class="add" src="./images/add.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="col">4500$</div>
+            </div>
+            <div class="row-cart">
+              <div class="col"><img src="./images/product_1.jpg" alt="" /></div>
+              <div class="col">
+                <div class="row justify-center align-center">
+                  <button>
+                    <img class="add" src="./images/minus.svg" alt="" />
+                  </button>
+                  <span>3</span>
+                  <button>
+                    <img class="add" src="./images/add.svg" alt="" />
+                  </button>
+                </div>
+              </div>
+              <div class="col">4500$</div>
+            </div>
+          </div>
+          <div class="contour" style="height: 35vh">
+            <div class="row justify-between">
+              <p>Sub - Total</p>
+              <p>15000$</p>
+            </div>
+            <div class="row justify-between">
+              <p>Shipping Fee</p>
+              <p>1200$</p>
+            </div>
+            <div class="row justify-between">
+              <p>Total</p>
+              <p>16200$</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-second">
+          <div class="contour h" style="">
+            <div class="col">
+              <h4>Final Information</h4>
+              <input type="text" placeholder="Enter your email ..." />
+              <input
+                type="text"
+                name=""
+                placeholder="Enter your Shipping Address ..."
+              />
+              <h4>Payment Method</h4>
+              <div
+                class="row justify-center align-center badge"
+                id="badge-airtel"
+              >
+                <input
+                  type="radio"
+                  name="payment"
+                  value="airtel"
+                  id="radio1"
+                /><label for="radio1">Airtel</label>
+              </div>
+              <div
+                class="row justify-center align-center badge"
+                id="badge-paypal"
+              >
+                <input
+                  type="radio"
+                  name="payment"
+                  value="Paypal"
+                  id="radio2"
+                /><label for="radio2">Paypal</label>
+              </div>
+              <div
+                class="row justify-center align-center badge"
+                id="badge-stripe"
+              >
+                <input
+                  type="radio"
+                  name="payment"
+                  value="Stripe"
+                  id="radio3"
+                /><label for="radio3">Stripe</label>
+              </div>
+              <button type="submit">Pay | $$$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

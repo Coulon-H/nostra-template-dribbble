@@ -1,0 +1,57 @@
+#products {
+    padding: 1em;
+}
+
+.active{
+    transition: all ease 0.5s;
+    cursor : pointer;
+}
+
+.active:hover{
+    font-size: 25px;
+    color: var(--secondary-accent);
+}
+
+.card-product {
+    width: 23%;
+    display:flex;
+    flex-direction:column;
+    align-items: start;
+    gap: 1em;
+    margin: 0 0.5em;
+}
+
+.card-product .card-body {
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-product .card-body button{
+    width: 20%;
+    height: 80%;
+    border-radius: 0.9em;
+    padding: 1em;
+}
+
+.card-product .card-body img {
+    width: 80%;
+}
+
+.card-product .card-img{
+    width: 100%;
+}
+
+.card-product .card-img img {
+    width: 100%;
+    height: 24.2em;
+    border-radius: 0.8em;
+}
+
+@media screen and (max-width: 380px) {
+
+    .card-product, .card-pick {
+      width: 100%;
+    }
+}

@@ -1,0 +1,286 @@
+.arrow-group {
+  width: 6%;
+  height: 2.7em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.7em;
+  background-color: white;
+  box-shadow: 1px 2px 2px var(--secondary-accent);
+}
+
+.arrow-group img {
+  width: 40%;
+}
+
+.banner-home {
+  position: relative;
+  background: url(../images/banner_1.jpg) center no-repeat;
+  background-size: cover;
+  width: 90%;
+  height: 100%;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+#header {
+  text-align: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#header h3 {
+  padding: 3em 0 0;
+  font-size: 35px;
+  color: white;
+}
+
+.link {
+  width: 15%;
+  color: var(--primary-accent);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.7em;
+  background-color: white;
+}
+
+.link img {
+  width: 20%;
+}
+
+#presentation {
+  padding: 2em 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.heading {
+  padding: 1em;
+}
+
+.heading h4 {
+  font-size: 25px;
+}
+
+.info-value {
+  width: 24%;
+  text-align: start;
+  padding: 0 1em;
+}
+
+.info-value .card-img {
+  width: 40%;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: var(--secondary-accent);
+}
+
+.info-value .card-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.info-value .card-body {
+  text-align: justify;
+}
+
+.picks {
+  gap: 1em;
+  padding: 1em;
+}
+
+.card-pick {
+  width: 24%;
+  height: 20em;
+  border-radius: 0.8em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.p1 {
+  background: url(../images/product_1.jpg);
+  background-size: cover;
+}
+
+.p2 {
+  background: url(../images/product_2.jpg);
+  background-size: cover;
+}
+
+.p3 {
+  background: url(../images/product_3.jpg);
+  background-size: cover;
+}
+
+.p4 {
+  background: url(../images/product_4.jpg);
+  background-size: cover;
+}
+
+.p-2 {
+  padding: 0 0.8em;
+}
+
+.card-pick .card-body {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 0 1em;
+  padding: 0 1.1em;
+  border-radius: 0.5em;
+}
+
+.card-pick .card-body img {
+  width: 15%;
+}
+
+#products {
+  padding: 1em;
+}
+
+.card-product {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1em;
+  margin: 0 0.5em;
+}
+
+.card-product .card-body {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-product .card-body button {
+  width: 20%;
+  height: 60%;
+  border-radius: 0.9em;
+}
+
+.card-product .card-body img {
+  width: 100%;
+}
+
+.card-product .card-img {
+  width: 100%;
+}
+
+.card-product .card-img img {
+  width: 100%;
+  height: 24.2em;
+  border-radius: 0.8em;
+}
+
+#end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-end {
+  color: white;
+  background-color: #1d242d;
+  width: 90%;
+  height: 22em;
+  border-radius: 1em;
+  display: flex;
+}
+
+.banner-end .col:nth-child(1) {
+  width: 40%;
+}
+
+.banner-end .col img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8em 0 0 0.8em;
+  object-fit: cover;
+}
+
+.banner-end .col:nth-child(2) {
+  width: 60%;
+  padding: 2em 1em 0;
+  text-align: start;
+}
+
+#end h4 {
+  font-size: 2em;
+}
+
+.banner-end .col:nth-child(2) .link {
+  width: 25%;
+  img {
+    width: 30%;
+  }
+}
+
+input,
+button {
+  padding: 1.5em;
+  border-radius: 0.8em;
+}
+
+input {
+  border: 1px solid var(--secondary-accent);
+  background-color: #f9fafb;
+  width: 60%;
+}
+
+@media screen and (max-width: 380px) {
+  .arrow-group {
+    width: 22%;
+  }
+
+  .link {
+    width: 50%;
+  }
+
+  .info-value {
+    width: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card-product, .card-pick {
+    width: 100%;
+  }
+
+  .banner-end {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .banner-end .col img {
+    border-radius: 0.8em 0.8em 0 0;
+  }
+
+  .banner-end .col:nth-child(1), .banner-end .col:nth-child(2)  {
+    width: 100%;
+  }
+
+  .banner-end .col:nth-child(2) .link {
+    width: 100%;
+    margin: 1em 0;
+    img {
+      width: 20%;
+    }
+  }
+}
